@@ -8,5 +8,11 @@ pipeline {
                 sh 'npm --version'
             }
         }
+       
+                    stage{'build'} {
+            steps { 'mkdir foxy'}
+                    }
+            }
+        }
     }
 }
