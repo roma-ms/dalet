@@ -9,7 +9,7 @@ pipeline {
             }
         }
        
-                    stage('build') {
+                    stage('build2') {
             steps { sh 'mkdir foxy'}
                     
             
