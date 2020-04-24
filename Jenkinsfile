@@ -1,10 +1,10 @@
 pipeline {
     agent { docker 
-           { image 'ansible:2.9.2' } }
+           { image 'node:6.4' } }
     stages {
         stage('build') {
             steps {
-                sh 'ansible --version'
+                sh 'npm --version''
             }
         }
     }
