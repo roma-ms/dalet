@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh 'touch bobo/roma.txt'
                 sh ' ls -a'
-                sh 'ip addr'
+                sh 'hostname'
             }
         }
        
