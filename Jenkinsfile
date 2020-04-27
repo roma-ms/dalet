@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build2') {
             steps {
-                sh 'touch bobo/roma.txt'
+                sh 'pwd bobo/roma.txt'
                 sh ' ls -a'
                 sh 'hostname'
             }
