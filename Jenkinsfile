@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh 'pwd bobo/roma.txt'
                 sh ' ls -a'
-                sh 'hostname'
+                sh 'echo "finally figured it out" > bobo/roma.txt '
             }
         }
        
