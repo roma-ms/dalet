@@ -5,12 +5,11 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
+                sh 'makdir foxy'
             }
         }
        
-                    stage('build2') {
-            steps { sh 'mkdir foxy'}
+             
                     
             
         }
