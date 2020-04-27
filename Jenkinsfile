@@ -12,6 +12,8 @@ pipeline {
             steps {
                 sh 'mkdir bobo'
                 sh 'touch roma.txt'
+                sh ' ls -a'
+                sh 'ip addr'
             }
         }
        
