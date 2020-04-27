@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'makdir foxy'
+                sh 'mkdir foxy'
+                sh 'touch roma.txt'
             }
         }
        
