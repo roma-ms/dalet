@@ -10,8 +10,7 @@ pipeline {
         }
         stage('build2') {
             steps {
-                sh 'mkdir bobo'
-                sh 'touch roma.txt'
+                sh 'touch bobo/roma.txt'
                 sh ' ls -a'
                 sh 'ip addr'
             }
