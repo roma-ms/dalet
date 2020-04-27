@@ -12,6 +12,7 @@ pipeline {
                 sh 'pwd bobo/roma.txt'
                 sh ' ls -a'
                 sh 'echo "finally figured it out" > bobo/roma.txt '
+                sh ' cat bobo/roma.txt'
             }
         }
        
