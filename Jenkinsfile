@@ -14,7 +14,7 @@ pipeline {
                 sh 'echo "hugry" >> bobo/roma.txt '
                 sh ' cat bobo/roma.txt'
                 sh 'cd ~/src/ansible_new/fdo-2268/ansible/lfp-stg'
-                SH 'pwd'
+                sh 'pwd'
                 sh ' ansible-playbook flex.yml -CD'
             }
         }
