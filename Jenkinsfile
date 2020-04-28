@@ -12,10 +12,10 @@ pipeline {
                 sh 'pwd bobo/roma.txt'
                 sh ' ls -a'
                 sh 'echo "hugry" >> bobo/roma.txt '
-                sh ' cat bobo/roma.txt'
-                sh 'cd ~/src/ansible_new/fdo-2268/ansible/lfp-stg'
+                retry (3) {
+                    sh ' cat bobo/roma.txt}
                 sh 'pwd'
-                sh ' ansible-playbook ~/src/ansible_new/fdo-2268/ansible/lfp-stg/haproxy.yml -CD  -i hosts.txt '
+                sh ' ansible-playbook ~/src/ansible_new/fdo-2268/ansible/lfp-stg/user.yml -CD  -i hosts.txt '
             }
         }
        
