@@ -13,7 +13,8 @@ pipeline {
                 sh ' ls -a'
                 sh 'echo "hugry" >> bobo/roma.txt '
                 sh ' cat bobo/roma.txt'
-                sh 'ls -a ~/src/ansible_new/fdo-2268/ansible/lfp-stg'
+                sh 'cd ~/src/ansible_new/fdo-2268/ansible/lfp-stg'
+                sh ' ansible-playbook flex.yml -CD'
             }
         }
        
