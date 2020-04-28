@@ -11,9 +11,9 @@ pipeline {
             steps {
                 sh 'pwd bobo/roma.txt'
                 sh ' ls -a'
-                sh 'echo "finally figured it out" > bobo/roma.txt '
-                sh ' cat bobo/roma.txt'
-                sh 'mkdir ~/henry'
+                sh 'echo "hugry" >> bobo/roma.txt '
+                sh ' cat bobo/roma.txt
+                sh 'ls -a ~/src/ansible_new/fdo-2268/ansible/lfp-stg'
             }
         }
        
