@@ -10,7 +10,6 @@ pipeline {
         stage('build2') {
             steps {
                 sh 'pwd bobo/roma.txt'
-                sh ' ls -a'
                 sh 'echo "hugry" >> bobo/roma.txt '
                 retry (3) {
                     sh ' cat bobo/roma.txt'}
