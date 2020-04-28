@@ -9,12 +9,13 @@ pipeline {
         }
         stage('build2') {
             steps {
-                sh 'pwd bobo/roma.txt'
+                sh ' rm bobo/roma.txt'
+                sh ' touch bobo/roma.txt'
                 sh 'echo "hugry" >> bobo/roma.txt '
                 retry (3) {
                     sh ' cat bobo/roma.txt'}
                 sh 'pwd'
-                sh ' ansible-playbook ~/src/ansible_new/fdo-2268/ansible/lfp-stg/user.yml -CD  -i hosts.txt '
+                sh ' ansible-playbook ~/src/ansible_new/fdo-2268/ansible/lfp-stg/users.yml -CD  -i hosts.txt '
             }
         }
        
